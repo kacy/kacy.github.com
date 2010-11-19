@@ -4,8 +4,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
   <head> 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" /> 
-    <title>Kacy Fortner</title> 
- 
+    <title>Kacy Fortner</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="jquery.raptorize.1.0.js"></script>
+    <script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('.button').raptorize({
+          'enterOn' : 'konami-code'
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('.button').raptorize();
+      });
+    </script>
+  	
     <style type="text/css"> 
       body {
         background-color: #222;
@@ -23,6 +41,20 @@
         bottom: 10px;
         right: 35px;
         font-family: Helvetica;
+      }
+      #raptor {
+        position: absolute;
+        color: #DDD;
+        bottom: 10px;
+        left: 35px;
+        font-family: Helvetica;
+        font-size: 50%;
+      }
+      #raptor a {
+        color: #222;
+      }
+      #raptor a:hover {
+        color: #99BADD;
       }
       a, a:link, a:hover, a:visited {
         color: #99BADD;
@@ -54,8 +86,7 @@
         &nbsp;'skype':'kacy.fortner',<br /> 
         &nbsp;'city':'Chapel Hill, NC',<br /> 
         &nbsp;'university':'University of North Carolina',<br /> 
-        &nbsp;'degree':'BS Computer Science',<br /> 
-        &nbsp;'attributes':['hungry','driven']}
+        &nbsp;'degree':'BS Computer Science'}<br />
     </div> 
  
     >>> kacy.social_networks()
@@ -68,14 +99,8 @@
         '<a href="http://www.gowalla.com/users/kacy/">gowalla</a>',
         '<a href="http://foursquare.com/user/kacyf">foursquare</a>',
         '<a href="http://www.last.fm/user/smarty927">last.fm</a>',
-        '<a href="http://www.github.com/kacy">github</a>']<br /> 
-    </div> 
-    
-    >>> kacy.hire_this_kid()
-    <div class='response'> 
-      ['<a href="http://www.kacyfortner.com/KacyFortner-Resume.pdf">Resume</a>']
-      <!--['<a href="hireme.php">Hire Me!</a>']-->
-    </div> 
+        '<a href="http://www.github.com/kacy">github</a>']<br />
+    </div>
     
   </div> 
  
@@ -85,7 +110,11 @@
   
   <div id='tagline'> 
     Software Engineer // Headbanger // Senior at UNC
-  </div> 
+  </div>
+  
+  <div id="raptor">
+    <a href="#" class="button">Raptorize!</a>
+  </div>
  
   
   <!-- Google Analytics --> 
