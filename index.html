@@ -11,27 +11,23 @@
     <script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
     
     <script src="jquery.noisy.js"></script>
-    <script>
-			$(document).ready(function () {
-			  $('body').noisy({
-  				intensity: 0.8, 
-  				size: 200, 
-  				opacity: 0.05,
-  				fallback: '',
-  				monochrome: true
-  			}).css('background-color', '#222');
-		  });
-		</script>
-
     <script type="text/javascript">
+      $(document).ready(function () {
+        $('body').noisy({
+          intensity: 0.8, 
+          size: 200, 
+          opacity: 0.05,
+          fallback: '',
+          monochrome: true
+        }).css('background-color', '#222');
+      });
+
       $(window).load(function() {
         $('.button').raptorize({
           'enterOn' : 'konami-code'
         });
       });
-    </script>
-
-    <script type="text/javascript">
+      
       $(window).load(function() {
         $('.button').raptorize();
       });
@@ -40,27 +36,25 @@
     <style type="text/css"> 
       body {
         text-shadow: 5px 5px 5px #000;
+        font-family: Helvetica;
       }
       #footer {
         position: absolute;
         bottom: 30px;
         right: 50px;
         font-size: 800%;
-        font-family: Helvetica;
       }
       #tagline {
         position: absolute;
         color: #DDD;
         bottom: 10px;
         right: 35px;
-        font-family: Helvetica;
       }
       #raptor {
         position: absolute;
         color: #DDD;
         bottom: 10px;
         left: 35px;
-        font-family: Helvetica;
         font-size: 50%;
       }
       #raptor a {
