@@ -7,8 +7,6 @@
     <title>Kacy Fortner</title>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script src="jquery.raptorize.1.0.js"></script>
-    <script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
     
     <script src="jquery.noisy.js"></script>
     <script type="text/javascript">
@@ -20,16 +18,6 @@
           fallback: '',
           monochrome: true
         }).css('background-color', '#222');
-      });
-
-      $(window).load(function() {
-        $('.button').raptorize({
-          'enterOn' : 'konami-code'
-        });
-      });
-      
-      $(window).load(function() {
-        $('.button').raptorize();
       });
     </script>
   	
@@ -49,19 +37,6 @@
         color: #DDD;
         bottom: 10px;
         right: 35px;
-      }
-      #raptor {
-        position: absolute;
-        color: #DDD;
-        bottom: 10px;
-        left: 35px;
-        font-size: 50%;
-      }
-      #raptor a {
-        color: #222;
-      }
-      #raptor a:hover {
-        color: #99BADD;
       }
       a, a:link, a:hover, a:visited {
         color: #99BADD;
@@ -99,6 +74,7 @@
     >>> kacy.social_networks()
     <div class='response'> 
       ['<a href="http://fb.kacyfortner.com">facebook</a>',
+        '<a href="http://tumblr.kacyfortner.com">tumblr</a>',
         '<a href="http://kacyf.posterous.com">posterous</a>',
         '<a href="http://www.twitter.com/kacyf">twitter</a>',
         '<a href="http://www.linkedin.com/in/kacyfortner">linkedin</a>',
@@ -117,12 +93,7 @@
   
   <div id='tagline'> 
     Software Engineer // Headbanger // Wannabe Rockstar
-  </div>
-  
-  <div id="raptor">
-    <a href="#" class="button">Raptorize!</a>
-  </div>
- 
+  </div> 
   
   <!-- Google Analytics --> 
   <script type="text/javascript"> 
