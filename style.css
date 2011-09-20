@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Franchise-Bold;
+  src: url('Franchise-Bold.ttf');
+}
+html, body {
+  text-shadow: 3px 3px 3px #000;
+  font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  background-image: url("black_denim.png");
+  background-repeat: repeat;
+}
+#footer {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  top:-50%;
+  font-size: 800%;
+  font-family: Franchise-Bold;
+}
+.transition {
+  -moz-transition: all 1s cubic-bezier(0.59, 0, 0, 1);
+  -webkit-transition: all 1s cubic-bezier(0.59, 0, 0, 1);
+  -o-transition: all 1s cubic-bezier(0.59, 0, 0, 1);
+  transition: all 1s cubic-bezier(0.59, 0, 0, 1);
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+#tagline {
+  position: absolute;
+  color: #DDD;
+  bottom: 10px;
+  right: 35px;
+}
+a, a:link, a:hover, a:visited {
+  color: #99BADD;
+  text-decoration: none;
+}
+#terminal {
+  font-size: 150%;
+  font-weight: bold;
+  color: #DDD;
+  margin-left: -50%;
+  top: 55px;
+  width: 600px;
+}
+#terminal .response{
+  font-size: 70%;
+  margin: 10px;
+}
+::-moz-selection {
+  background:#99BADD;
+  color:#FFF;
+}
+::selection{
+  background:#99BADD;
+  color:#FFF;
+}

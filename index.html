@@ -1,89 +1,51 @@
 <!doctype html>
-  <head> 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
     <title>Kacy Fortner</title>
-    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-  	
-    <style type="text/css">
-      html, body {
-        text-shadow: 3px 3px 3px #000;
-        font-family: Helvetica;      
-        background-image: url("jeans.png");
-        background-repeat: repeat;
-      }
-      #footer {
-        position: absolute;
-        bottom: 30px;
-        right: 50px;
-        font-size: 800%;
-      }
-      #tagline {
-        position: absolute;
-        color: #DDD;
-        bottom: 10px;
-        right: 35px;
-      }
-      a, a:link, a:hover, a:visited {
-        color: #99BADD;
-        text-decoration: none;
-      }
-      #terminal {
-        font-family: courier;
-        font-size: 160%;
-        color: #DDD;
-        left: 50px;
-        top: 50px;
-        width: 550px;
-      }
-      #terminal .response{
-        font-size: 70%;
-        margin: 10px;
-      }
-    </style> 
-  </head> 
-  <body> 
-  
-  <div id='terminal'> 
-    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div id='terminal' class='transition'> 
     >>> kacy.info()
     <div class='response'> 
        {'full_name':'Kacy Cameron Fortner',<br /> 
         &nbsp;'email':'kacy at kacyfortner dot com',<br /> 
         &nbsp;'phone':'+1.919.789.1522',<br /> 
         &nbsp;'skype':'kacy.fortner',<br /> 
-        &nbsp;'city':'Chapel Hill, NC',<br /> 
-        &nbsp;'university':'University of North Carolina',<br /> 
-        &nbsp;'degree':'BS Computer Science'}<br />
-    </div> 
- 
+        &nbsp;'city':'Raleigh, NC',<br /> 
+        &nbsp;'university':'University of North Carolina'}<br />
+    </div>
+
     >>> kacy.social_networks()
     <div class='response'> 
-      ['<a href="http://fb.kacyfortner.com">facebook</a>',
+       ['<a href="http://www.twitter.com/kacyf">twitter</a>',
+        '<a href="http://kacyfortner.com/+">google+</a>',
+        '<a href="http://kacyfortner.com/spotify">spotify</a>',
+        '<a href="http://fb.kacyfortner.com">facebook</a>',
         '<a href="http://tumblr.kacyfortner.com">tumblr</a>',
         '<a href="http://kacyf.posterous.com">posterous</a>',
-        '<a href="http://www.twitter.com/kacyf">twitter</a>',
         '<a href="http://www.linkedin.com/in/kacyfortner">linkedin</a>',
         '<a href="http://news.ycombinator.com/user?id=kacy">hacker news</a>',
         '<a href="http://www.gowalla.com/users/kacy/">gowalla</a>',
-        '<a href="http://foursquare.com/user/kacyf">foursquare</a>',
+        '<a href="http://foursquare.com/kacyf">foursquare</a>',
         '<a href="http://www.last.fm/user/smarty927">last.fm</a>',
         '<a href="http://www.github.com/kacy">github</a>']<br />
     </div>
-    
-  </div> 
- 
-  <div id='footer'> 
+  </div>
+
+  <div id='footer' class='transition'>
     <a href="http://www.kacyfortner.com">Kacy Fortner</a> 
-  </div> 
-  
-  <div id='tagline'> 
+  </div>
+
+  <div id='tagline' class='transition'>
     Software Engineer // Headbanger // Wannabe Rockstar
-  </div> 
-  
-  <!-- Google Analytics --> 
+  </div>
+
+  <!-- Google Analytics -->
   <script type="text/javascript"> 
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -95,6 +57,6 @@
     } catch(err) {}
   </script> 
   <!-- End Google Analytics -->
-    
-  </body> 
+
+</body> 
 </html> 
