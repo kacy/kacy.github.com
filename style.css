@@ -1,6 +1,7 @@
 @font-face {
   font-family: Franchise-Bold;
-  src: url('Franchise-Bold.ttf');
+  /*src: url('Franchise-Bold.ttf');*/
+  src: url('Museo_Slab_500-webfont.ttf');
 }
 html, body {
   text-shadow: 3px 3px 3px #000;
