@@ -1,21 +1,30 @@
 @font-face {
-  font-family: Franchise-Bold;
-  /*src: url('Franchise-Bold.ttf');*/
+  font-family: Museo-Slab;
   src: url('Museo_Slab_500-webfont.ttf');
 }
 html, body {
-  text-shadow: 3px 3px 3px #000;
   font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  background-image: url("black_denim.png");
-  background-repeat: repeat;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url("golden-gate.jpg");
+  background-size:cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*opacity: 0.7;*/
 }
 #footer {
+  text-shadow: 2px 2px 2px #000;
   position: absolute;
   bottom: 30px;
   right: 50px;
   top:-50%;
   font-size: 800%;
-  font-family: Franchise-Bold;
+  font-family: Museo-Slab;
+}
+#footer a {
+  color: #56a0d3;
 }
 .transition {
   -moz-transition: all 1s cubic-bezier(0.59, 0, 0, 1);
@@ -26,19 +35,24 @@ html, body {
   overflow: hidden;
 }
 #tagline {
+  text-shadow: 2px 2px 2px #000;
   position: absolute;
   color: #DDD;
   bottom: 10px;
+  top: -50%;
   right: 35px;
 }
 a, a:link, a:hover, a:visited {
-  color: #99BADD;
+  color: #000;
   text-decoration: none;
+}
+a:hover {
+  color: #56a0d3;
 }
 #terminal {
   font-size: 150%;
   font-weight: bold;
-  color: #DDD;
+  color: #000;
   margin-left: -50%;
   top: 55px;
   width: 650px;

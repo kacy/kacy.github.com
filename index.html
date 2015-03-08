@@ -1,3 +1,4 @@
+
 <!doctype html>
 <head>
     <meta charset="utf-8">
@@ -13,52 +14,60 @@
     
     >>> kacy.info()
     <div class='response'> 
-       {'full_name':'Kacy Cameron Fortner',<br /> 
-        &nbsp;'email':'kacy at kacyfortner dot com',<br /> 
-        &nbsp;'phone':'+1.919.789.1522',<br /> 
-        &nbsp;'skype':'kacy.fortner',<br /> 
-        &nbsp;'city':'Raleigh, NC',<br /> 
-        &nbsp;'university':'University of North Carolina'}<br />
+       {'full_name':'Kacy Cameron Fortner',<br />
+        &nbsp;'email':'kacy at kacyfortner dot com',<br />
+        &nbsp;'phone':'<a href="tel://19197891522">+1.919.789.1522</a>',<br />
+        &nbsp;'skype':'<a href="skype:kacyfortner?call">kacy.fortner</a>',<br />
+        &nbsp;'city':'<a href="http://goo.gl/sPwdIJ" target=_blank>Downtown Durham, NC</a>'<br />
+        <!--&nbsp;'university':'University of North Carolina'}<br />-->
     </div>
 
     >>> kacy.social_networks()
     <div class='response'> 
-       ['<a href="http://www.twitter.com/kacyf">twitter</a>',
-        '<a href="http://blog.kacyfortner.com/">writing</a>',
-        '<a href="http://www.github.com/kacy">github</a>',
-        '<a href="https://plus.google.com/115230353171088879031/posts">google+</a>',
-        '<a href="http://open.spotify.com/user/kacyf">spotify</a>',
-        '<a href="https://www.facebook.com/kacy.fortner">facebook</a>',
-        '<a href="http://tumblr.kacyfortner.com">tumblr</a>',
-        <!--'<a href="http://kacyf.posterous.com">posterous</a>',-->
-        '<a href="http://www.linkedin.com/in/kacyfortner">linkedin</a>',
-        '<a href="http://news.ycombinator.com/user?id=kacy">hacker news</a>',
-        '<a href="http://www.angel.co/kacy">angelList</a>',
+       ['<a href="http://www.twitter.com/kacyf" target=_blank>twitter</a>',
+        <!--'<a href="http://blog.kacyfortner.com/">writing</a>',-->
+        '<a href="http://www.github.com/kacy" target=_blank>github</a>',
+        '<a href="https://plus.google.com/u/0/+KacyFortner" target=_blank>google+</a>',
+        '<a href="http://open.spotify.com/user/kacyf" target=_blank>spotify</a>',
+        '<a href="https://www.facebook.com/kacy.fortner" target=_blank>facebook</a>',
+        '<a href="http://tumblr.kacyfortner.com" target=_blank>tumblr</a>',
+        '<a href="http://www.linkedin.com/in/kacyfortner" target=_blank>linkedin</a>',
+        '<a href="http://news.ycombinator.com/user?id=kacy" target=_blank>hacker news</a>',
+        '<a href="http://www.angel.co/kacy" target=_blank>angelList</a>',
         <!--'<a href="http://www.gowalla.com/users/kacy/">gowalla</a>',-->
-        '<a href="http://foursquare.com/kacyf">foursquare</a>',
-        '<a href="http://www.last.fm/user/smarty927">last.fm</a>']</br />
+        '<a href="http://foursquare.com/kacyf" target=_blank>foursquare</a>',
+        '<a href="http://www.last.fm/user/smarty927" target=_blank>last.fm</a>']</br />
     </div>
-    
+
+    >>> kacy.previously_at()
+    <div class='response'> 
+       ['<a href="http://adzerk.com" target=_blank>Adzerk</a>'],
+       ['<a href="http://virb.com" target=_blank>Virb</a>'],
+       ['<a href="http://mediatemple.net" target=_blank>Media Temple</a>'],
+       ['<a href="http://unc.edu" target=_blank>UNC</a>']
+    </div>
+
     >>> kacy.ships_code_at()
     <div class='response'> 
-       ['<a href="http://adzerk.com">Adzerk</a>']
+       ['<a href="http://perfectaudience.com" target=_blank>Perfect Audience</a>'],
+       ['<a href="http://marinsoftware.com" target=_blank>Marin Software</a>']
     </div>
-    
+
   </div>
 
   <div id='footer' class='transition'>
-    <a href="http://www.kacyfortner.com">Kacy Fortner</a> 
+    <a href="http://www.kacyfortner.com">kacy fortner</a> 
   </div>
 
   <div id='tagline' class='transition'>
-    Software Engineer // Headbanger // Wannabe Rockstar
+    tar heel // dog lover // software engineer // professional bruncher
   </div>
 
   <!-- Google Analytics -->
   <script type="text/javascript"> 
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script> 
+  </script>
   <script type="text/javascript"> 
     try {
       var pageTracker = _gat._getTracker("UA-9625728-1");
@@ -67,6 +76,16 @@
   </script> 
   <!-- End Google Analytics -->
 
+  <!-- Using code I wrote at Perfect Audience to show you ads on the webzzzzzz -->
+  <script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/52aa8a74e298807c64000030.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+  </script>
+  <!-- <3 -->
+
 </body> 
 </html> 
-
